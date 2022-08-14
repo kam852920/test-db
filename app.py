@@ -26,13 +26,8 @@ def home():
     return render_template('AddData.html')
 
 
-@app.route("/about", methods=['POST'])
-def about():
-    return render_template('AddData.html')
-
-
 @app.route("/addData", methods=['POST'])
-def AddData():
+def addData():
     user_name = request.form['user_name']
     user_image_file = request.files['user_image_file']
 
