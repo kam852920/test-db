@@ -31,7 +31,7 @@ def addData():
     user_name = request.form['user_name']
     user_image_file = request.files['user_image_file']
 
-    insert_sql = "INSERT INTO employee VALUES (%s, %s)"
+    insert_sql = "INSERT INTO nagp VALUES (%s, %s)"
     cursor = db_conn.cursor()
 
     if user_image_file.filename == "":
