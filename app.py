@@ -41,9 +41,9 @@ def addData():
 
         cursor.execute(insert_sql, (user_name, user_image_file))
         db_conn.commit()
-        s3_file_name = "" + user_name + " " + user_image_file
+        # s3_file_name = "" + user_name + " " + user_image_file
         # Uplaod image file in S3 #
-        image_file_name_in_s3 = s3_file_name + "_image_file"
+        image_file_name_in_s3 = user_name + "_image_file"
         s3 = boto3.resource('s3')
 
         try:
