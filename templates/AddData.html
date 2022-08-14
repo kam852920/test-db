@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Information</title>
+  </head>
+  <center>
+    <font color="black" size="4" style="font-family: avenir">
+      <h1 style="color: dodgerblue;">SIMPLE GET UPDATE DATABASE</h1>
+
+      <body bgcolor="lightgrey">
+        <form
+          action="/addemp"
+          autocomplete="on"
+          method="POST"
+          enctype="multipart/form-data"
+        >
+          <button
+            type="submit"
+            formaction="/getemp"
+            style="
+              background: blueviolet;
+              height: 45px;
+              width: 200px;
+              color: white;
+              font: oblique;
+              cursor: pointer;
+            "
+          >GET Data</button>
+		  <br/><br/>
+          <table>
+            <tr>
+              <td>
+                <label for="user_name">User Name:</label>
+              </td>
+              <td>
+                <input type="text" name="user_name" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="user_image_file">Image:</label>
+              </td>
+              <td>
+                <input type="file" name="user_image_file" />
+              </td>
+            </tr>
+          </table>
+		  <br/>
+
+          <button
+            type="submit"
+            style="
+              background: grey;
+              height: 45px;
+              width: 200px;
+              color: white;
+              size: 5;
+              font: oblique;
+              cursor: pointer;
+            "
+          >
+            UPDATE DATABASE
+          </button>
+        </form>
+      </body>
+    </font>
+  </center>
+</html>
